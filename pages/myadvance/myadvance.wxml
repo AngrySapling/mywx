@@ -1,0 +1,12 @@
+<!--pages/coupon/coupon.wxml-->
+<view id='mycoupon'>
+  <view class='coupon_nav'>
+    <van-row>
+      <van-col span="8" wx:for="{{nav}}" wx:key="{{index}}"><view class='nav_li' id='{{item.id}}' class="nav_li {{item.id === navID?'isColor':''}}" bindtap='playNav'>{{item.name}}</view></van-col>
+    </van-row>
+  </view>
+  <scroll-view
+    scroll-y  style="height: 100vh;" bindscrolltoupper="upper"  bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view style='height:100rpx;'></view>
+  </scroll-view>
+</view>

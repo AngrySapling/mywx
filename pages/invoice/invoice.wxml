@@ -1,0 +1,48 @@
+<view class="invoice">
+  <view class="top">
+    <view wx:for="{{getInvoice}}" 
+          wx:key="id" 
+          class="topInv {{item.id == classID? 'isactive':''}}"
+          id='{{item.id}}'
+          bindtap='palyInvoice'
+          >{{item.name}}
+    </view>
+  </view>
+  <view class='getcontent'>
+    <view class='search'>
+      <input bindinput="bindKeyInput" value='{{value}}'></input>
+      <view class="btn" bindtap="btnsearch">搜索</view>
+    </view>
+    <view>
+      <view class="invocieContent">
+        <view class="title">零售交易单信息</view>
+        <view style="padding:0 10px;">
+          <i-row class="msg">
+            <i-col span="6" i-class="col-class col-class1">店名 : </i-col>
+            <i-col span="18" i-class="col-class col-class2">1</i-col>
+          </i-row>
+          <i-row class="msg">
+            <i-col span="6" i-class="col-class col-class1">小票号 : </i-col>
+            <i-col span="18" i-class="col-class col-class2">1</i-col>
+          </i-row>
+          <i-row class="msg">
+            <i-col span="6" i-class="col-class col-class1">实付金额 : </i-col>
+            <i-col span="18" i-class="col-class col-class2">1</i-col>
+          </i-row>
+          <i-row class="msg">
+            <i-col span="6" i-class="col-class col-class1">日期 : </i-col>
+            <i-col span="18" i-class="col-class col-class2">1</i-col>
+          </i-row>
+          <i-row class="msg">
+            <i-col span="6" i-class="col-class col-class1">开票状态 : </i-col>
+            <i-col span="18" i-class="col-class col-class2">1</i-col>
+          </i-row>
+        </view>
+      </view>
+      <view class="submit" bindtap="navInvoice">申请开票</view>
+    </view>
+  </view>
+  <view class="photo" bindtap="photo">
+    <image src="../../static/image/photo.png"></image>
+  </view>
+</view>

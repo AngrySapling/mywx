@@ -1,0 +1,83 @@
+/* pages/componentShop/shop.wxss */
+.scroll-view-item{
+  padding: 16rpx 20rpx;
+  overflow:hidden;
+  font-size:24rpx; 
+}
+
+.scroll-view-item .img{
+  height:160rpx;
+  width: 160rpx;
+  float: left;
+}
+.scroll-view-item .img image{
+  height: 100%;
+  width: 100%;
+}
+.scroll-view-item .text{
+  float:left;
+  padding-left:20rpx;
+  width: 330rpx
+}
+.scroll-view-item .text .ic1{
+  font-size: 24rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.scroll-view-item .text .sales{
+  font-size: 24rpx;
+  height: 60rpx;
+  position: relative;
+}
+.scroll-view-item .text .sales .num{
+  border: 1px solid red;
+  padding:0 8rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 20rpx;
+  margin-top: 10rpx;
+  color: red;
+  border-radius: 10rpx;
+}
+.scroll-view-item .text .sales .star{
+  position: absolute;
+  height: 40rpx;
+  width: 40rpx;
+  top: 10rpx;
+  right: 0;
+}
+.scroll-view-item .text .sales .star image{
+  height: 100%;
+  width: 100%;
+}
+.shop_footer{
+  line-height: 64rpx;
+  height: 64rpx;
+}
+.addshop{
+  padding-top:10rpx;
+}
+.addorreduce{
+  float:left;
+}
+.add_shopcarts{
+  float: right;
+  width: 25%;
+  height: 56rpx;
+  line-height: 56rpx;
+  padding:0 10rpx;
+  border: 1px solid red;
+  color: red;
+  border-radius: 6rpx;
+}
+.price{
+  font-size:28rpx;
+  float:left;
+  height: 60rpx;
+  line-height:60rpx;
+  width: 25%;
+}
+.bottom{
+  text-align: center;
+  font-size: 24rpx;
+}

@@ -1,0 +1,25 @@
+/* pages/myadvance/myadvance.wxss *//* pages/coupon/coupon.wxss */
+.coupon_nav{
+  padding-top: 15rpx;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.coupon_nav .nav_li{
+  text-align: center;
+  font-size: 24rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+}
+/* pages/mycoupon/mycoupon.wxss */
+#mycoupon .coupon{
+  padding-top: 32rpx;
+}
+#mycoupon .coupon_content{
+  width: 672rpx;
+  height: 184rpx;
+  margin: 0 auto;
+  margin-bottom: 32rpx;
+  position: relative;
+}

@@ -1,0 +1,43 @@
+<!--pages/componentShop/shop.wxml-->
+<view class="scroll-view-item bc_green" >
+    <view style="overflow:hidden;">
+      <navigator url='../detail/detail?id={{item.id}}'>
+        <view class="img" style="height:{{length}};width:{{length}}">
+          <image src="{{item.pic}}" lazy-load="true"></image>
+        </view>
+      </navigator>
+      <view class="text">
+        <view class="ic1">{{item.name}}</view>
+        <view class="ic1">
+          价格:
+          <text style='color:red;'>{{item.minPrice}}元</text>
+          <text style="text-decoration:line-through;color:#999;padding-left:10px;">{{item.originalPrice}}元</text> </view>
+        <view class="sales">
+          <view class="num" style="float:left;">已售123份</view>
+          <view class="star" bindtap='btnAdd'>
+            <image src='../../static/image/addshop.png'></image>
+            <!-- <i-rate 
+              disabled="{{true}}"
+              value="{{item.star}}"
+              size="12"
+              name>
+              {{item.star}}星
+            </i-rate> -->
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- <view class='addshop' style="overflow:hidden;margin:0 auto;">
+      <view class='price shop_footer'>
+          122
+      </view>
+      <view class='shop_footer addorreduce' style='float:left;width:45%;'>
+        <view style='width:90px;margin:0 auto;'>
+          <i-input-number value="{{value1}}" min="1" max="999" bindchange="handleChange1"/>
+        </view>
+      </view>
+      <view class='shop_footer add_shopcarts' style='font-size:14px;text-align:center;' bindtap="btnAdd">
+        加入购物车
+      </view>
+    </view> -->
+  </view>

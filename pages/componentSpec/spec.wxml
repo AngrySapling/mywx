@@ -1,0 +1,39 @@
+<!--pages/componentSpec/spec.wxml-->
+
+  <view class='top' bindtap='close'></view>
+  <view style="padding:16px 16px 0">
+    <view class='header'>
+      <image src='../../static/image/05.jpg'></image>
+      <view class='title'>
+        <view>{{basicInfo.name}}</view>
+        <view> <text style='color:red;' wx:for="{{specGoods}}" wx:key="index" wx:if="{{index === specid}}"> ¥{{item.price}}</text></view>
+      </view>
+    </view>
+    <view class='gg'>
+      <view style='height:30px;line-height:30px;text-align:left;font-size:30rpx;'>规格</view> 
+      <view class='spec'>
+        <view 
+        wx:for="{{specGoods}}" 
+        id='{{index}}' 
+        data-spec="{{item}}"
+        wx:key bindtap='spec'
+        class="{{index === specid?'isactive':''}}">{{item.name}}</view>
+      </view> 
+    </view>
+    <view class='inputNumber'>
+      <view style='float:left;height:30px;line-height:30px;font-size:30rpx;'>数量</view>
+      <van-stepper
+        value="{{ value }}"
+        integer
+        min="1"
+        max="99"
+        step="1"
+        bind:change="onChange"
+        style="float:right;"
+      />
+    </view>
+  </view>
+  <view class='addgoods' bindtap='addGoodsDetail'>
+    加入购物车
+  </view>
+

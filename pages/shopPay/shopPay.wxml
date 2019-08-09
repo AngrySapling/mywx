@@ -1,0 +1,36 @@
+
+<view id="shoppay">
+  <van-notice-bar
+  scrollable="true"
+  text="支持体店购买付款,请给店家查看验收"
+  custom-class="topnav"
+/>
+  <view class='money'>
+    <view class='money_pay'>支付金额</view>
+    <view class='inp'> 
+      <text style='font-size:45rpx;float:left;'>¥</text> 
+      <view style='float:left;width:570rpx;'>
+        <van-field
+          type="digit"
+          focus="true"
+          value="{{ value }}"
+          border="{{ false }}"
+          bind:change="onChange"
+        />
+      </view>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='words'>
+      <text class='bz'>备注</text>
+      <input maxlength="20" placeholder='给商家留言,最多20字' />
+    </view>
+    <view class='pay_status'>
+      <view class='status status1'>支付方式</view>
+      <view class='status status2'>微信支付 <image src='../../static/image/right.png'></image></view>
+    </view>
+  </view>
+  <view class='pays'>
+    确认支付
+  </view>
+</view>

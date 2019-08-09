@@ -1,0 +1,8 @@
+
+{
+  "usingComponents": {
+    "my-search":"../componentSearch/search",
+    "van-search": "../../dist/search/index",
+    "van-action-sheet": "../../dist/action-sheet/index"
+  }
+}

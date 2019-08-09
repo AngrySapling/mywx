@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText":"分类",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "van-row": "../../dist/row/index",
+    "van-col": "../../dist/col/index",
+    "my-shop": "../componentShop/shop",
+    "my-spec": "../componentSpec/spec",
+    "van-action-sheet": "../../dist/action-sheet/index",
+    "van-loading": "../../dist/loading/index"
+     
+  }
+}

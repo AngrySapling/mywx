@@ -1,0 +1,31 @@
+<view id="indent">
+  <view class='coupon_nav'><view  wx:for="{{nav}}" wx:key="{{index}}" class='nav_li' id='{{item.id}}' class="nav_li {{item.id === navID?'isColor':''}}" bindtap='playNav'>{{item.name}}</view>
+    </view>
+  <scroll-view scroll-y class = "indentList">
+  <view style='height:100rpx;'></view>
+    <view class="list">
+      <navigator url='../indentDetail/indentDetail'>
+        <view class="title">
+          <view style="float:left;">2019-2-20 20:20</view>
+          <view style="float:right;text-align:right;">状态: 未审核</view>
+        </view>
+        <view class="content">
+          <image src='../../static/image/01.jpg'></image>
+          <view class='goods_content'>
+            <view class='content_title'>龙井茶后更符合规范化的防守打法都是更符合规范化更符合规范化股份</view>
+            <view class='spec'> <text>价格</text> <text>30元/箱</text> </view>
+          </view>
+          <view class='price'>
+            <view class='pic'>399</view>
+            <view style='color:#ccc;'>x6</view>
+          </view>
+        </view>
+        <view style='height:50rpx;line-height:50rpx;background:#fff;font-size:24rpx;padding:0 20rpx;text-align:right;'>总价: 122</view>
+        <view class="title">
+          <view style="float:right;text-align:right;">总价: 122</view>
+        </view>
+      </navigator>
+    </view>
+    <i-load-more/>
+   </scroll-view>
+</view>

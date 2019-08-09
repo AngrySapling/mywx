@@ -1,0 +1,193 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view id="detail">
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="true" interval="5000" duration="1000" >
+    <block wx:for="{{detail_imgUrls}}" wx:key>
+      <swiper-item>
+        <image src="{{item.pic}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 商品名 -->
+  <view class='detail_title'>
+    <view class='detail_title_top'>
+      <view class='title_left'>
+        <view >{{basicInfo.name}}</view>
+      </view>
+      <button class='title_right' open-type="share" data-name="pageShare">
+        <image src='../../static/image/share.png'></image>
+        <view class='title_right_content'>分享有礼</view>
+      </button>
+    </view>
+    
+    <view class='prices'>
+      <view style='font-size:16px;' class='price_b1'>
+        <text style='color:red;'> ¥{{basicInfo.minPrice}}元 </text>
+      </view>
+      <!-- <view class='price_b1'>
+        原价: <text style="text-decoration:line-through;color:#999;">{{basicInfo.originalPrice}}元 </text>
+      </view> -->
+      <view class='price_b1 check'>
+        <view style='text-align:left;'>已有 <text></text>人预约 </view>
+        <view style='text-align:right;'>浏览 <text></text>次 </view>
+      </view>
+      <view class='price_b1 check'>
+        <view style='text-align:left;'>运费 <text></text>元 </view>
+        <view style='text-align:center;'>已售 <text></text>件 </view>
+        <view style='text-align:right;'>浏览 <text></text>次 </view>
+      </view>
+    </view>
+  </view>
+  <view class='order'>
+    <view style='background:#fff;' class='choice'>
+      <view class='data_text'>预约时间</view>
+      <view class='all' bindtap='handleChange1'>
+        <text>请选择</text>
+        <image src='../../static/image/right1.png'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 产品详情 -->
+  <view class="introduce">
+    <view class="title" >
+      <van-tabs current="{{ current }}" bind:change="handleChange">
+        <van-tab title="商品详情">
+          <view class="content" style='width:100%;height:100%;'>
+            <template is="wxParse" data="{{wxParseData:data.nodes}}" />
+          </view>
+        </van-tab>
+        <van-tab title="商品规格">
+          <view class='goods_spec'  >
+            <van-row class="spec">
+              <van-col span="6" >
+                <view class="col1" >编号</view> 
+              </van-col>
+              <van-col span="18" >
+                <view class="col2" >123123131</view> 
+              </van-col>
+            </van-row>
+            <van-row class="spec">
+              <van-col span="6" >
+                <view class="col1" >编号</view> 
+              </van-col>
+              <van-col span="18" >
+                <view class="col2" >123123131</view> 
+              </van-col>
+            </van-row>
+          </view>
+        </van-tab>
+        <van-tab title="用户评论">
+          <view  >
+            <view style='border-bottom:1px solid #eee;padding:10px 0;'>
+              <view class='comment'>
+                <view class='tx'>
+                  <image src='../../static/image/05.jpg'></image>
+                  <text>1366666666</text>
+                </view>
+                <view class='date'>
+                  2018-09-12
+                </view>
+              </view>
+              <view class='contents'>
+                这是评论
+              </view>
+              <view class='star' style="padding-left:15px;">
+                <i-rate 
+                  disabled="{{true}}"
+                  value="{{3}}"
+                  size="16">
+                </i-rate>
+              </view>
+            </view>
+          </view>
+        </van-tab>
+      </van-tabs>
+    </view>
+    
+  </view>
+  <!-- 产品规格 -->
+  
+  <view class="buy_bottom" style='background:#fff;'>
+    <van-row>
+      <van-col span="10" i-class="col-class">
+        <view class='buy_title'>
+          <van-row>
+              <van-col span="8" i-class="col-class">
+              <navigator url='/pages/indexs/indexs' open-type="switchTab">
+                <view class="span">
+                  <view class='img'><image src='../../static/image/index.png'></image></view>
+                  <view class="text">首页</view>
+                </view>
+                </navigator>
+              </van-col>
+              <van-col span="8" i-class="col-class">
+                <view class="span" id="{{basicInfo.id}}" bindtap='addCollect'>
+                  <view class='img' wx:if="{{!isCollect}}"><image src='../../static/image/follow.png'></image></view>
+                  <view class='img' wx:if="{{isCollect}}"><image src='../../static/image/follow1.png'></image></view>
+                  <view class="text">关注</view>
+                </view>
+              </van-col>
+              <van-col span="8" i-class="col-class">
+                <navigator url='/pages/shopingcarts/shopingcarts' open-type="switchTab">
+                  <van-tabbar-item class="demo-badge span" info="{{length}}">
+                    <view class='img'><image src='../../static/image/shop.png'></image></view>
+                    <view class="text">
+                      购物车
+                    </view>
+                  </van-tabbar-item>
+                </navigator>
+              </van-col>
+          </van-row>
+        </view>
+      </van-col>
+      <van-col span="7" i-class="col-class">
+        <view class='buy_title' id='加入购物车' data-specname="{{properties[0].name}}" data-id="{{basicInfo.id}}" data-specid="{{properties[0].id}}"  
+        style="background:orange;color:#fff;" bindtap='addShopCarts'>加入购物车</view>
+      </van-col>
+      <van-col span="7" i-class="col-class">
+        <view class='buy_title' id='立即购买' data-specname="{{properties[0].name}}" data-id="{{basicInfo.id}}" data-specid="{{properties[0].id}}" 
+        style="background:red;color:#fff;" bindtap='addShopCarts'>立即购买</view>
+      </van-col>
+    </van-row>
+  </view>
+  <van-action-sheet show="{{ show }}" title="商品购买" bind:close="onClose" class="bottom">
+    <view style="padding:16px 16px 0">
+      <view class='header'>
+        <image src='../../static/image/05.jpg'></image>
+        <view class='title'>
+          <view>{{basicInfo.name}}</view>
+          <view> <text style='color:red;'> ¥{{goodPrice}}</text></view>
+        </view>
+      </view>
+      <view class='gg'>
+        <view class='text' style='height:30px;line-height:30px;'>规格</view> 
+        <view class='spec'>
+          <view 
+          wx:for="{{properties}}" 
+          id='{{basicInfo.id}}' 
+          data-id="{{item.id}}"
+          data-name="{{item.name}}" 
+          wx:key bindtap='spec'
+          class="{{item.id === specid?'isactive':''}}">{{item.name}}</view>
+        </view> 
+      </view>
+      <view class='inputNumber'>
+        <view class='num' style=''>数量</view>
+        <van-stepper  value="{{ value }}" integer min="5" max="40" step="2" bind:change="onChange" style="float:right;"/>
+      </view>
+    </view>
+    <view class='addgoods' bindtap='addGoodsDetail'>
+      {{addGoods}}
+    </view>
+  </van-action-sheet>
+  <van-action-sheet show="{{ show1 }}" bind:close="onClose" title="">
+      <van-datetime-picker
+        type="datetime"
+        value="{{ currentDate }}"
+        min-date="{{ minDate }}"
+        max-date="{{ maxDate }}"
+        bind:confirm="onChange"
+        bind:cancel="onClose"
+      />
+  </van-action-sheet>
+</view>

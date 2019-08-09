@@ -1,0 +1,280 @@
+/* pages/detail/detail.wxss */
+#detail .slide-image{
+  width: 100%;
+  height: 600rpx;
+  display: block;
+  margin: 0 auto;
+}
+#detail swiper{
+  height: 600rpx;
+}
+.detail_title{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 10rpx 30rpx;
+}
+.order{
+  background: #eee;
+  padding: 19rpx 0;
+}
+.order .choice{
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size:30rpx; 
+  padding: 30rpx;
+}
+.order .choice .data_text{
+  float: left;
+}
+.order .choice .all{
+  color: #666;
+  float: right;
+}
+.order .choice .all image{
+  height: 34rpx;
+  width: 34rpx;
+  vertical-align: top;
+}
+.detail_title_top{
+  padding:10rpx 0 8px;
+}
+.detail_title_top:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.title_right_content{
+  font-size: 12px;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: #e78314;
+  text-align: center;
+  width: 96rpx;
+}
+.check{
+  display: flex;
+}
+.check view{
+  flex:1;
+}
+.price_b1{
+  line-height:22px;
+  height: 22px;
+  font-size: 12px;
+}
+.imgContent{
+  min-height:calc(100vh - 42px);
+}
+.title_left{
+  float:left;
+  width:510rpx;
+  font-size: 30rpx;
+}
+button::after{ 
+  border: none;
+}
+.title_right{
+  float: right;
+  background: #fff;
+  padding: 0;
+}
+.title_right image{
+  display: block;
+  height: 30rpx;
+  width: 30rpx;
+  margin:0 auto;
+}
+.introduce{
+  height: 100vh;
+}
+.introduce .title{
+  background: #fff;
+  text-align:center;
+  font-size: 32rpx;
+  line-height: 40rpx;
+}
+.introduce .content{
+  font-size: 30rpx;
+  height: 22px;
+  line-height: 22px;
+}
+.goods_spec{
+  margin:20rpx 20rpx 0;
+  border: 1px solid #ccc;
+}
+.goods_spec .van-row{
+  line-height: 70rpx;
+  font-size: 22rpx;
+  color: #979797;
+  border-bottom: 1px solid #ccc;
+}
+.goods_spec .spec:last-child .van-row{
+  border: none;
+}
+.spec .col1{
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.spec .col2{
+  text-align: left;
+  padding-left: 20rpx;
+}
+.buy_bottom{
+  position:fixed;
+  bottom:-2px;
+  left:0;
+  width:100%;
+  border-top: 1px solid #f3f3f3;
+}
+.buy_bottom  .buy_title{
+  font-size: 36rpx;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #fff;
+}
+.buy_bottom  .buy_title .span{
+  padding: 10rpx 0;
+}
+.buy_bottom  .buy_title .span .img{
+  height: 48rpx;
+  width: 48rpx;
+  margin: 0 auto;
+}
+#detail .buy_bottom  .buy_title .span .img image{
+  height: 100%;
+  width: 100%;
+}
+.buy_bottom  .buy_title .span .text{
+  height: 32rpx;
+  line-height: 32rpx;
+  color: #000;
+  font-size: 24rpx;
+}
+.buy_bottom  .buy_title i-col:last-child .span{
+  border-right: none;
+}
+.span image {
+  display:block;
+}
+.comment{
+  padding: 10rpx;
+  overflow: hidden;
+  font-size: 28rpx;
+}
+.comment .tx{
+  height: 40rpx;
+  line-height: 40rpx;
+  float: left;
+}
+.comment .tx image{
+  vertical-align: middle;
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 50%;
+}
+.comment .tx text{
+  padding-left:20rpx;
+}
+.comment .date{
+  float: right;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.contents{
+  padding: 10rpx 40rpx;
+  font-size: 32rpx;
+  text-align: left;
+}
+ .header{
+  overflow: hidden;
+  padding-bottom: 30rpx;
+  border-bottom:1px solid #eee;
+}
+ .header image{
+  display: block;
+  float: left;
+  height: 100rpx;
+  width: 100rpx;
+}
+ .header .title{
+  float: left;
+  padding-left: 20rpx;
+}
+ .header .title view{
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 12px;
+
+}
+.bottom .gg{
+  text-align: left;
+  padding-left: 20rpx;
+  border-bottom: 1px solid #eee;
+}
+.bottom .gg .text{
+  font-size: 30rpx;
+}
+
+.bottom .gg .spec{
+  overflow: hidden;
+  margin: 0 20rpx;
+}
+.bottom .gg .spec view{
+  float: left;
+  margin-right:20rpx;
+  height: 50rpx;
+  line-height: 50rpx; 
+  border: 1px solid #ccc;
+  font-size: 12px;
+  padding: 0 20rpx;
+
+}
+.inputNumber{
+  padding:30rpx 20rpx;
+  overflow: hidden;
+}
+.inputNumber .num{
+  float:left;
+  height:60rpx;
+  line-height:60rpx;
+  font-size: 30rpx;
+}
+.addgoods{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background:red;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+}
+.close{
+  height: 40rpx;
+  width: 40rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+}
+.close image{
+  height: 100%;
+  width: 100%;
+}
+.top{
+  width: 100%;
+  height: -webkit-calc(100vh - 270px); 
+  background: rgba(0, 0, 0, 0);
+  position: fixed;
+  top: -webkit-calc(-100vh + 270px);
+  left: 0;
+}
+.isactive{
+  border:1px solid red !important;
+  color:red !important;
+}
+.buy_title .van-info{
+  right: -30rpx;
+  top: 0;
+}

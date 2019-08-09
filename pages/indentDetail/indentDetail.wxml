@@ -1,0 +1,87 @@
+<!--pages/indentDetail/indentDetail.wxml-->
+<view class="indentDetail">
+
+  <!-- 顶部商品信息 -->
+  <view class="indentTop">
+    <!-- 顶部订单号 -->
+    <view class='indenttitle'>
+      <view class="indentleft">
+        <text>订单号:</text>
+        <text>970</text>
+      </view>
+      <view class="indentright">
+        <text>未审核</text>
+        <text>未支付</text>
+      </view>
+    </view>
+
+    <!-- 订单列表 -->
+    <view style="padding:10px 15px;">
+      <view class="indentlist">
+        <view class="indentlist_title">
+          <view>
+            <text>商品名:</text>
+            <text>茉莉花茶</text>
+          </view>
+          <view style="text-align:right;">
+            <text>合计 : </text>
+            <text style="color:red;">1000000元</text>
+          </view>
+        </view>
+        <view class="indentlist_content">
+          <view style="flex:1;">
+            <text>数量 : </text>
+            <text>21 箱</text>
+          </view>
+          <view style="flex:2;">
+            <text>价格 : </text>
+            <text>36000 元/箱</text>
+          </view>
+          
+        </view>
+      </view>
+    </view>
+    
+    <view class="indentnum">
+      <view>
+        <text>合计 : </text>
+        <text style="color:red;"> ¥112 </text>
+      </view>
+      <view>
+        <text>共</text>
+        <text style="color:red;padding:0 5px;">2</text>
+        <text>件商品</text>
+      </view>
+    </view>
+  </view>
+  
+  <!-- 物流信息 -->
+  <view class="indentadr">
+    <view class="adrtitle" >物流信息 : </view>
+    <view style="font-size:14px;background:#fff;padding:0 10px">
+      <view class='adr' style='border-bottom:1px solid #ccc;'>
+        <text>地址 : </text>
+        <text>北京市海淀区dsfdsfsdfasdasdasdsadasdsad士大夫士大夫士大夫大师傅</text>
+      </view>
+      <view class='concat'>
+        <view >
+          <text>联系人 : </text>
+          <text>一禅</text>
+        </view>
+        <view>
+          <text>手机号 : </text>
+          <text>1311144334</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 留言 -->
+  <view class="indentwords">
+    <view class="words">
+      留言
+    </view>
+    <textarea>
+    </textarea>
+  </view>
+</view>

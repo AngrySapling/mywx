@@ -1,0 +1,42 @@
+/* pages/message/message.wxss */
+#message{
+  padding: 0 10px;
+}
+.message_scroll{
+  height: 100vh
+}
+.message_scroll .msg_content{
+  font-size: 16px;
+  line-height:30px;
+  width: 95%;
+  max-height: 90px;
+  overflow:hidden;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3;
+  text-overflow:ellipsis;
+}
+.message_scroll .msg_date{
+  text-align: right;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+#message .scroll-view-item{
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.message_scroll .delete{
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.message_scroll .delete image{
+  height: 100%;
+  width: 100%;
+}

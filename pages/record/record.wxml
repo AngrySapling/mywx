@@ -1,0 +1,10 @@
+<view style='border-top:1px solid #ccc;'>
+  <i-row>
+    <i-col span="12" i-class="col-class" class="datas_title" wx:for="{{record_list}}" wx:key="id">
+      <view class="img">
+        <image src="{{item.src}}"></image>
+      </view>
+      <view class='text'>{{item.name}}</view>
+    </i-col>
+  </i-row> 
+</view>

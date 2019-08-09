@@ -1,0 +1,12 @@
+<view id='sales'>
+  <my-search class="sales_search" bindmyevent="search"></my-search>
+  <view class='sales_content'>
+    <scroll-view scroll-y class='sales_scroll'>
+      <view wx:for="{{sales_list}}" wx:key="id">
+        <my-shop item="{{item}}"></my-shop>
+      </view>
+      <i-load-more />
+    </scroll-view>
+  </view>
+  <i-toast id="toast" />
+</view>

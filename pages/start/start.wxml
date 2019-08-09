@@ -1,0 +1,29 @@
+<!--pages/start/start.wxml-->
+<view class="start" 
+  style="background: -webkit-linear-gradient(top, rgba(0,175,180, 1), rgba(0,175,180, 0.1));">
+  <view class='img' animation="{{animation}}" >
+    <image src='{{userInfo.avatarUrl}}'></image>
+  </view>
+  <view class="content">
+    <view style='color:#fff;text-align:center;position:absolute;width:100%;'>{{userInfo.nickName}}</view>
+    <view class='bg1'>
+      <image src='../../static/start/bg1.png'></image>
+    </view>
+    <view class='goshop'>
+      <image src='../../static/start/bg2.png'></image>
+        <view class='go' bindtap='goshop'>进入店铺 ></view> 
+    </view>
+  </view>
+  <view class='login' wx:if="{{isShow}}">
+    <view class='palyLogin'>
+      <view class='lets'>
+        <image src='../../static/image/05.jpg'></image>
+        <view>欢迎来到一起购</view>
+      </view>
+      <view class='gomsg'>为了提供优质的服务,一起购需要获取一下信息</view>
+      <view class='ymsg'> <text style='padding:0 10px;'>·</text>你的公开信息(昵称、头像等) </view>
+      <button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">确认微信授权</button>
+    </view>
+  </view>
+</view>
+ 

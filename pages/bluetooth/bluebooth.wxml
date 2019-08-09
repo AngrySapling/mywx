@@ -1,0 +1,7 @@
+<!--pages/bluetooth/bluebooth.wxml-->
+<view class="bluetooth">
+  <view bindtap="playBluetooth">打开蓝牙</view>
+  <ul wx:for="{{deviceIdList}}" wx:key="item">
+    <li>{{item}}</li>
+  </ul>
+</view>

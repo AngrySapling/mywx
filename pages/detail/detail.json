@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "van-row": "../../dist/row/index",
+    "van-col": "../../dist/col/index",
+    "van-tab": "../../dist/tab/index",
+    "van-tabs": "../../dist/tabs/index",
+    "van-action-sheet": "../../dist/action-sheet/index",
+    "van-stepper": "../../dist/stepper/index",
+    "van-datetime-picker": "../../dist/datetime-picker/index",
+    "van-tabbar": "../../dist/tabbar/index",
+    "van-tabbar-item": "../../dist/tabbar-item/index"
+  }
+}

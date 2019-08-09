@@ -1,0 +1,120 @@
+
+/* pages/indentDetail/indentDetail.wxss */
+.indentDetail{
+    border-top: 1px solid #ccc;
+}
+.indentTop{
+    background: #eee;
+}
+.indenttitle{
+    overflow: hidden;
+    padding: 5px 10px;
+    font-size: 18px;
+    background: #fff;
+}
+.indenttitle .indentleft{
+    height: 30px;
+    line-height:30px;
+    float: left;
+}
+.indenttitle .indentright{
+    height: 30px;
+    line-height:30px;
+    float: right;
+}
+.indenttitle .indentright text{
+  padding: 0 5px;
+  color: red;
+}
+.indentTop .indentlist{
+  background: #fff;
+  padding: 10px; 
+  border-radius: 8px;
+  border-bottom: 1px solid #ccc;
+}
+.indentTop .indentlist:last-child{
+  border-bottom: none;
+}
+.indentTop .indentlist .indentlist_title{
+  font-size: 16px;
+  height:30px;
+  line-height: 30px;
+  padding-bottom: 5px;
+  display:flex;
+}
+.indentTop .indentlist .indentlist_title view{
+  flex:1;
+}
+.indentTop .indentlist .indentlist_content{
+  display:flex;
+  padding:5px 0; 
+}
+.indentTop .indentlist .indentlist_content view{
+  font-size: 16px;
+  padding: 0 10px;
+  height: 16px;
+  line-height: 16px;
+  border-right: 1px solid #000;
+}
+.indentTop .indentlist .indentlist_content view:first-child{
+  padding-left: 0;
+}
+.indentTop .indentlist .indentlist_content view:last-child{
+  border-right: none;
+}
+.indentTop .indentnum{
+  overflow:hidden;
+  font-size:16px;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.indentTop .indentnum view{
+  float:right;
+  padding: 10px;
+  height: 30px;
+  line-height: 30px;
+}
+.indentadr{
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+}
+.indentadr .adrtitle{
+  font-size: 18px;
+  padding: 5px 10px;
+  height:30px;
+  line-height: 30px;
+}
+.indentadr .adr, .indentadr .concat{
+  padding:10px;
+}
+.indentadr .adr text{
+  height:20px;
+  line-height: 20px;
+}
+.indentadr .concat{
+  display: flex;
+}
+.indentadr .concat view{
+  flex:1;
+}
+.indentwords {
+  padding:10px;
+}
+.indentwords .words ,.indentwords textarea{
+  float: left;
+}
+.indentwords .words{
+  width: 16px;
+  font-size: 16px;
+  padding: 20px 5px;
+  line-height: 30px;
+}
+.indentwords textarea{
+  height: 80px;
+  width: 300px;
+  border:1px solid #ccc;
+  font-size:14px;
+  line-height: 20px;
+  padding:10px;
+  border-radius: 5px;
+}

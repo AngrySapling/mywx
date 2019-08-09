@@ -1,0 +1,13 @@
+<!--pages/message/message.wxml-->
+<view id='message'>
+  <scroll-view scroll-y class='message_scroll'>
+    <view class="scroll-view-item bc_green" wx:for="{{message_list}}" wx:key="id">
+      <view class='msg_content'>{{item.title}}</view>
+      <view class="msg_date">{{item.dataList}}</view>
+      <view class="delete">
+        <image src='../../static/image/delete.png'></image>
+      </view>
+    </view>
+    <i-load-more />
+  </scroll-view>
+</view>

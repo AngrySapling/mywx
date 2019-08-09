@@ -1,0 +1,152 @@
+/* pages/my/my.wxss */
+#my{
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+.head{
+  width: 100%;
+  height: 538rpx;
+  overflow:hidden;
+  position: relative;
+  background: #e3bc71;
+}
+.head .person{
+  padding: 39rpx 0;
+}
+.head .person .my_img{
+  height: 80px;
+  width: 80px;
+  margin: 0 auto;
+  z-index: 0;
+}
+.head .person .name{
+  text-align: center;
+  color: #fff;
+  font-size: 26rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.my_img image{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.my_content{
+  position: relative;
+  overflow: hidden;
+  height: 300rpx;
+}
+.bgimg{
+  background:#fff;
+  position:absolute;
+  left:50%;
+  margin-left:-750rpx; 
+  top: 29rpx;
+  width:1500rpx;
+  height: 1500rpx;
+  border-radius: 750rpx;
+}
+
+.my_content .myvip{
+  box-shadow: 10rpx 10rpx 100rpx #e5e5e5;
+  position: relative;
+  width: 592rpx;
+  height: 113rpx;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 20rpx;
+  padding: 56rpx 32rpx 32rpx;
+}
+.my_content navigator{
+  font-size:26rpx;
+  color: #999;
+  position: absolute;
+  bottom: 30rpx;
+  right: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.my_content navigator image{
+  height: 26rpx;
+  width: 26rpx;
+  vertical-align: top;
+}
+.per_contact{
+  color: #eee;
+  
+}
+/* 我的订单 */
+.mybuyindent{
+  background: #fff;
+  font-size:16px;
+  overflow:hidden;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.mybuyindent .text image{
+  height: 40rpx;
+  width: 40rpx;
+  vertical-align:top;
+}
+.mybuyindent navigator{
+  color: #999;
+  /* font-style:italic; */
+  text-align:center;
+}
+.mybuyindent navigator image{
+  height: 26rpx;
+  width: 26rpx;
+}
+.buyindent_status{
+  padding:30rpx 0;
+  background: #fff;
+}
+.buyindent_status .status{
+  text-align: center;
+  font-size: 26rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.buyindent_status .img{
+  height: 50rpx;
+  width:50rpx;
+  margin:0 auto;
+}
+.buyindent_status .img image{
+  height: 100%;
+  width:100%;
+}
+.buyindent_status .col-class{
+  border-right: 1px solid #ccc;
+}
+.my{
+  margin-top: 10px;
+  padding-left: 38rpx;
+  background: #fff;
+}
+.my .my_msg{
+  background: #fff;
+  padding: 28rpx 0;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+  padding-right:20rpx; 
+}
+.my .my_msg:last-child{
+  border-bottom:none; 
+}
+.my .my_msg .img{
+  height: 30rpx;
+  width: 30rpx;
+  float: right;
+}
+.my_msg_text{
+  float: left;
+  height: 30rpx;
+  line-height: 30rpx;
+  font-size: 28rpx;
+}
+.my_msg_text image{
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: top;
+}

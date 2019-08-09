@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-stepper": "../../dist/stepper/index",
+    "van-swipe-cell": "../../dist/swipe-cell/index",
+    "van-dialog": "../../dist/dialog/index"
+  }
+}

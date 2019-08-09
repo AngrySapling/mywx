@@ -1,0 +1,4 @@
+<!--pages/login/login.wxml-->
+<view class="login">
+  <view class="wxlogin" bindtap="wxlogin">微信登陆</view>
+</view>

@@ -1,0 +1,72 @@
+/* pages/componentSpec/spec.wxss */
+/*弹框*/
+ .header{
+  overflow: hidden;
+  padding-bottom: 15px;
+  border-bottom:1px solid #eee;
+}
+ .header image{
+  display: block;
+  float: left;
+  height: 50px;
+  width: 50px;
+}
+ .header .title{
+  float: left;
+  padding-left: 10px;
+}
+ .header .title view{
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+
+}
+.gg{
+  text-align: left;
+  padding-left: 10px;
+  border-bottom: 1px solid #eee;
+}
+.gg .spec{
+  overflow: hidden;
+  padding:15px 10px;
+}
+.gg .spec view{
+  float: left;
+  margin-right:10px;
+  height: 25px;
+  line-height: 25px; 
+  border: 1px solid #ccc;
+  font-size: 12px;
+  padding: 0 10px;
+
+}
+.inputNumber{
+  padding:15px 10px;
+  overflow: hidden;
+}
+.addgoods{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background:red;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+}
+.close{
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.close image{
+  height: 100%;
+  width: 100%;
+}
+.isactive{
+  border:1px solid red !important;
+  color:red !important;
+}

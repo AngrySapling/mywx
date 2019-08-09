@@ -1,0 +1,97 @@
+/* pages/invoiceform/invoiceform.wxss */
+.invoiceform{
+  background: #e4e7ee;
+  height:100vh; 
+}
+.invoiceform .top{
+  height: 30px;
+  line-height:30px;
+  background: #000;
+  text-align:center;
+  color: #fff;
+  font-size: 16px;
+}
+.invoiceform .nav{
+  background: #fff;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 8px;
+  border:1px solid #1AAD16;
+  height: 26px;
+  line-height:26px;
+  overflow:hidden;
+}
+.invoiceform .nav .title{
+  font-size: 14px;
+  text-align:center;
+  border-right: 1px solid #1AAD16;
+}
+.invoiceform .nav i-col:last-child .title{
+  border-right: none;
+}
+.navactive{
+  background: #1AAD16;
+  color: #fff;
+}
+.personal,.institution,.company{
+  width: 85%;
+  padding: 10px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  margin-top:30px; 
+}
+.radio{
+  font-size: 16px;
+  padding-left: 10px;
+}
+.check{
+  width:85%;
+  margin: 0 auto;
+  background: #fff;
+  margin-top: 40px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.check p{
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 15px;
+}
+
+.invoiceform .institution i-row input,.invoiceform .company i-row input{
+  border: 1px solid #ccc;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+  min-height: 23px;
+  height: 23px;
+  line-height: 23px;
+  border-radius:5px;
+}
+.invoiceform .col-class1{
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.invoiceform .col-class2{
+  padding:0 10px;
+}
+.allmsg{
+  padding: 5px 0;
+  font-size: 16px;
+}
+.getinvoice{
+  width: 80%;
+  margin: 0 auto;
+  background: #1AAD16;
+  color: #fff;
+  border-radius: 10px;
+  text-align:center;
+  margin-top: 40px;
+  font-size: 18px;
+  height: 30px;
+  line-height: 30px;
+}
+/* .radio  */

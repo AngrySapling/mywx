@@ -1,0 +1,143 @@
+/* 加入购物车的商品 */
+#shopingcarts{
+  min-height: 100vh;
+  background: #eee;
+}
+#shopingcarts .allgoods{
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+#shopingcarts .allgoods .goods{
+  background: #eee;
+  margin-bottom: 6rpx;
+  padding: 20rpx;
+  overflow: hidden;
+}
+#shopingcarts .allgoods .goods image{
+  float: left;
+  height: 150rpx;
+  width: 150rpx;
+}
+#shopingcarts .allgoods .goods .goodstitle{
+  width: 330rpx;
+  padding-left: 36rpx;
+  float: left;
+  font-size: 24rpx;
+  line-height: 28rpx;
+}
+#shopingcarts .allgoods .goods .price view{
+  float: right;
+  width: 176rpx;
+  font-size: 24rpx;
+  line-height: 28rpx;
+  text-align: right;
+}
+#shopingcarts .allgoods .more{
+  padding: 30rpx 0;
+  background: #fff;
+}
+#shopingcarts .allgoods .more .content{
+  width: 170rpx;
+  margin: 0 auto;
+}
+#shopingcarts .allgoods .more .content text{
+  font-size: 24rpx;
+  padding-right: 10rpx;
+}
+#shopingcarts .allgoods .more .content image{
+  height: 24rpx;
+  width: 24rpx;
+}
+#shopingcarts .words{
+  padding: 20rpx 0;
+  background: #fff;
+}
+#shopingcarts .words textarea{
+  font-size: 24rpx;
+  line-height: 30rpx;
+  width: 90%;
+  padding: 0 5%;
+  height: 60rpx;
+}
+#shopingcarts .express{
+  background: #eee;
+  padding-top: 20rpx;
+}
+#shopingcarts .express .adr{
+  padding: 26rpx 20rpx;
+  background: #fff;
+}
+#shopingcarts .express .adr .phone{
+  overflow: hidden;
+  height: 32rpx;
+}
+#shopingcarts .express .adr .phone image{
+  height: 28rpx;
+  width: 28rpx;
+  vertical-align: middle;
+}
+#shopingcarts .express .adr .phone .img1{
+  float: left;
+}
+#shopingcarts .express .adr .phone .img2{
+  float: right;
+}
+#shopingcarts .express .adr .phone  .person_msg{
+  padding-left: 20rpx;
+  font-size: 26rpx;
+  float: left;
+  line-height: 32rpx;
+}
+#shopingcarts .express .adr .adr_msg{
+  font-size: 24rpx;
+  line-height: 32rpx;
+  padding-left: 48rpx;
+  width: 510rpx;
+}
+#shopingcarts .express .pay_style{
+  margin-top: 20rpx;
+  background: #fff;
+  line-height: 28rpx;
+  padding: 25rpx 30rpx;
+  overflow: hidden;
+  font-size: 26rpx;
+
+}
+#shopingcarts .express .pay_style .pay_content{
+  float: right;
+}
+#shopingcarts .express .pay_style .title{
+  float: left;
+}
+#shopingcarts .express .pay_style image{
+  height: 26rpx;
+  width: 26rpx;
+  float: right;
+  vertical-align: middle;
+}
+#shopingcarts .express .price_postage{
+  padding: 20rpx 30rpx;
+  background: #fff;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+#shopingcarts .price_postage .price_msg{
+  overflow: hidden;
+  line-height: 44rpx;
+}
+#shopingcarts .price_postage .price_msg .title1{
+  float: left;
+}
+#shopingcarts .price_postage .price_msg .money{
+  float: right;
+}
+#shopingcarts .gopay{
+  height: 82rpx;
+  line-height: 82rpx;
+  background: #ff7903;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

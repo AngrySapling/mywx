@@ -1,0 +1,134 @@
+<view id="goodsSearch">
+  <view class='search'>
+    <van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+  background="#fff"
+/>
+  </view>
+  <scroll-view
+    scroll-y
+    style="height:100vh;background:#eee;"
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    bindscroll="scroll"
+    scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}"
+  >
+  <view style='height:90rpx;'></view>
+  <!-- 搜索历史 -->
+  <view class='recommend' wx:if="{{false}}">
+    <view class='history'>
+      <view style='padding:22rpx;overflow:hidden;'>
+        <view class='text'>
+          搜索历史
+        </view>
+        <image src='../../static/image/delete.png'></image>
+      </view>
+      <view class='content'>
+        <view class='content_text'>
+          213212
+        </view>
+        <view class='content_text'>
+          我是
+        </view>
+      </view>
+    </view>
+    <view class='rec_goods'>
+      <view class='rec_goods_top'>
+        <view class='img'>
+          <image src='../../static/image/coupon.png'></image>
+        </view>
+      <!-- 导航地址     -->
+      </view>
+      <view style='all_content'>
+        <van-row>
+          <van-col span="12" >
+            <view class='goods_content'>
+              <navigator>
+                <view class='img'>
+                  <image src='../../static/image/01.jpg'></image>
+                </view>
+              </navigator>
+              <view class='goods_title'>
+                <view class='title'>一品龙豪</view>
+                <view class='price'>
+                  <text style='padding-right:20rpx;color:#ff7903;'>¥266</text>
+                  <text style='font-size:24rpx;color:#999;text-decoration:line-through;'>¥266</text>
+                </view>
+              </view>    
+              <view class='img'>
+                <image src='../../static/image/addshop.png'></image>
+              </view>
+            </view>
+          </van-col>
+          <van-col span="12">
+            <view class='goods_content'>
+              <navigator>
+                <view class='img'>
+                  <image src='../../static/image/01.jpg'></image>
+                </view>
+              </navigator>
+              <view class='goods_title'>
+                <view class='title'>一品龙豪</view>
+                <view class='price'>
+                  <text style='padding-right:20rpx;color:#ff7903;'>¥266</text>
+                  <text style='font-size:24rpx;color:#999;text-decoration:line-through;'>¥266</text>
+                </view>      
+                <view class='img'>
+                  <image src='../../static/image/addshop.png'></image>
+                </view>
+              </view>
+            </view>
+          </van-col>
+        </van-row>
+      </view>
+    </view>
+  </view>
+  <!-- 搜索商品 -->
+    <view class='goods'>
+      <view class="nav {{isShow?'isactive':''}}">
+        <van-row>
+          <van-col class="nav_li" span="6" wx:for="{{nav}}" wx:key="index" id="{{item.id}}" bindtap="navLi">
+            <text class="{{item.id === isNavId?'iscolor':''}}">{{item.name}}</text>
+          </van-col>
+          <van-col class="nav_li" span="6" id="3" bindtap="navLi1">
+            <text style='padding-right:10rpx;' class="{{'3' === isNavId?'iscolor':''}}">价格</text>
+            <image src='../../static/image/no.png' wx:if="{{isNavId !== '3'}}"></image>
+            <image src='../../static/image/up1.png' wx:if="{{isNavId === '3' && priceUpDown}}"></image>
+            <image src='../../static/image/dow1.png' wx:if="{{isNavId === '3' && !priceUpDown}}"></image>
+          </van-col>
+        </van-row>
+      </view>
+      <view style='height:72rpx;' wx:if="{{isShow}}"></view>
+      <van-row>
+        <van-col span="12" wx:for="{{searchGoods}}" wx:key="{{index}}">
+          <view class='goods_content'>
+            <navigator>
+              <view class='img'>
+                <image src='{{item.pic}}'></image>
+              </view>
+            </navigator>
+            <view class='goods_title'>
+              <view class='title'>{{item.name}}</view>
+              <view class='price'>
+                <text style='padding-right:20rpx;color:#ff7903;'>¥{{item.minPrice}}</text>
+                <text style='font-size:24rpx;color:#999;text-decoration:line-through;'>¥{{item.originalPrice}}</text>
+              </view>
+              <view class='img' bindtap='addshop'>
+                <image src='../../static/image/addshop.png'></image>
+              </view>
+            </view>
+          </view>
+        </van-col>
+      </van-row>
+    </view>
+    <view class='loading' wx:if="{{isLoading}}"><van-loading type="spinner" size="28rpx" />加载中...</view>
+  </scroll-view>
+  <van-action-sheet show="{{ show }}" bind:close="onClose" class="action">
+    <my-spec basicInfo="{{basicInfo}}" properties="{{properties}}" specGoods="{{specGoods}}"  bindclose="close"></my-spec>
+  </van-action-sheet>
+</view>

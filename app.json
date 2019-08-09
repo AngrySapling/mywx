@@ -1,0 +1,94 @@
+{
+  "pages": [
+    "pages/indexs/indexs",
+    "pages/start/start",
+    "pages/classify/classify",
+    "pages/detail/detail",
+    "pages/bluetooth/bluebooth",
+    "pages/my/my",
+    "pages/shopPay/shopPay",
+    "pages/shopingcarts/shopingcarts",
+    "pages/goodsSearch/goodsSearch",
+    "pages/indent/indent",
+    "pages/mycoupon/mycoupon",
+    "pages/getcoupon/getcoupon",
+    "pages/collect/collect",
+    "pages/pay/pay",
+    "pages/circle/circle",
+    "pages/indentDetail/indentDetail",
+    "pages/sales/sales",
+    "pages/login/login",
+    "pages/invoiceform/invoiceform",
+    "pages/invoice/invoice",
+    "pages/messageDetail/messageDetail",
+    "pages/message/message",
+    "pages/record/record",
+    "pages/myconcat/myconcat",
+    "pages/circleDetail/circleDetail",
+    "pages/vip/vip",
+    "pages/bindVip/bindVip",
+    "pages/payphone/payphone",
+    "pages/records/tables/tables",
+    "pages/componentSpec/spec",
+    "pages/myadvance/myadvance"
+  ],
+  "window": {
+    "backgroundColor": "#f1f1f1",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "微丰达",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#DC143C",
+    "list": [
+      {
+        "pagePath": "pages/indexs/indexs",
+        "text": "首页",
+        "borderStyle": "black",
+        "iconPath": "static/image/shouye.png",
+        "selectedIconPath": "static/image/shouye1.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "borderStyle": "black",
+        "iconPath": "static/image/fenlei.png",
+        "selectedIconPath": "static/image/fenlei1.png"
+      },
+      {
+        "pagePath": "pages/circle/circle",
+        "text": "活动圈",
+        "borderStyle": "black",
+        "iconPath": "static/image/friends.png",
+        "selectedIconPath": "static/image/friends1.png"
+      },
+      {
+        "pagePath": "pages/shopingcarts/shopingcarts",
+        "text": "购物车",
+        "borderStyle": "black",
+        "iconPath": "static/image/gouwuche.png",
+        "selectedIconPath": "static/image/gouwuche1.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "borderStyle": "black",
+        "iconPath": "static/image/my_icon.png",
+        "selectedIconPath": "static/image/my_icon1.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "sitemapLocation": "sitemap.json"
+}

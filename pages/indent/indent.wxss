@@ -1,0 +1,78 @@
+/* pages/indent/indent.wxss */
+.coupon_nav{
+  padding-top: 15rpx;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: #fff;
+}
+.coupon_nav .nav_li{
+  float: left;
+  width: 20%;
+  text-align: center;
+  font-size: 24rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+}
+.isColor{
+  color: #ff7348;
+  border-bottom: 2px solid #ff7348;
+}
+.indentList{
+  background:#f3f3f3;
+  height: 100vh;
+}
+.indentList .list{ 
+  margin: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  border:1px solid #ccc;
+}
+.indentList .title{
+  padding:0 20rpx; 
+  overflow:hidden;
+  height: 82rpx;
+  line-height: 82rpx;
+  font-size: 24rpx;
+}
+.indentList .content{
+  padding: 20rpx;
+  background: #f3f3f3;
+  overflow: hidden;
+}
+.indentList .content image{
+  height: 150rpx;
+  width: 150rpx;
+  float: left;
+}
+.indentList .content .goods_content{
+  float: left;
+  padding-left: 18rpx;
+}
+.indentList .content .goods_content .content_title{
+  font-size: 24rpx;
+  height: 70rpx;
+  line-height: 35rpx;
+  width: 344rpx;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.indentList .content .goods_content .spec{
+  height: 61rpx;
+  line-height: 61rpx;
+  font-size: 22rpx;
+}
+.indentList .content .price{
+  float: right;
+}
+.indentList .content .price view{
+  text-align: right;
+  line-height: 35rpx;
+  height: 35rpx;
+  font-size: 24rpx;
+}
+

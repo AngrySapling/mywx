@@ -1,0 +1,125 @@
+
+<view>
+  <!-- 顶部广告栏 -->
+  <swiper indicator-dots="true" autoplay="true" interval="4000" duration="1200" class='banner' circular="true" current='swiperCurrent' bindchange="swiperchange">
+    <!-- <block > -->
+      <swiper-item class='swiper_item' wx:for="{{imgUrls}}" wx:key="id">
+        <image src="{{item.picUrl}}_m" class="slide-image" style="-webkit-transform: scale({{ swiperCurrent == index ? 0.85 : 0.68 }}) translate({{ (swiperCurrent == index - 1 || swiperCurrent == index + 1) ? (swiperCurrent - index) * 30 : 0 }}%, 0); -webkit-transition: 0.6s;"  mode="aspectFill"/>
+      </swiper-item>
+    <!-- </block> -->
+  </swiper>
+  <!-- 分类栏 -->
+  <van-row class="isclass">
+    <van-col span="6" i-class="col-class" wx:for="{{nav}}" wx:key>
+      <navigator url='{{item.url}}'>
+        <view class="classify">
+          <image src='{{item.src}}'></image>
+          <view>{{item.name}}</view>
+        </view>
+      </navigator>
+    </van-col>
+  </van-row>
+  <!-- 商品内容 -->
+  <view id='index_content'>
+    <!-- 消息通知栏 -->
+    <view class="message">
+      <text style="float:left;height:27px;line-height:27px;font-size:14px;padding:0 10px;">消息通知</text>
+        <swiper autoplay="true" interval="4000" duration="2000" circular="true" vertical class="ismessage">
+          <block wx:for="{{message}}" wx:key="title">
+            <swiper-item>
+              <view id='{{item.id}}' style='overflow:hidden;height:100%;' bindtap='nav'>
+                <text class='content' style='line-height:25px;'>{{item.title}}</text> <text style='float:right;height:100%;display:block;line-height:25px;'>{{item.dateAdd}}</text>
+              </view>
+            </swiper-item>
+          </block>
+        </swiper>
+    </view>
+    <!-- 联系 -->
+    <view class='contact'>
+      <view class='contact_img'>
+        <image src='../../static/image/01.jpg'></image>
+      </view>
+      <view class='contact_text'>
+        <view class='head'>欢迎光临本店</view>
+        <view class='detail'>本店主营茶叶,茶具,购买请点击右侧联系方式咨询</view>
+      </view>
+      <view class='contact_phone'>
+         <button open-type="contact" class='play_wx'>
+            <image src='../../static/image/wx.png'></image>
+          </button>
+        <view class='play_phone' bindtap='phone'>
+          <image src='../../static/image/phone.png'></image>
+        </view>
+      </view>
+    </view>  
+    <!-- 优惠券 -->
+    <view class='coupon'>
+      <view class='coupon_top'>
+        <view class='img'>
+          <image src='../../static/image/coupon.png'></image>
+        </view>
+      <!-- 导航地址     -->
+      </view>
+      <view class='coupon_content'>
+        <view class='coupon_content_left'>
+          <view class='money1'>{{Coupon.moneyMax}}元</view>
+          <view class='money2'>满{{Coupon.moneyHreshold}}可用</view>
+        </view>
+        <view class='coupon_content_middle'>
+          <view class='yhq'>优惠券</view>
+          <view class='date'><text style='padding-right:10rpx;'>有效期</text><text>{{Coupon.dateUpdate}}</text></view>
+        </view>
+        <view class='coupon_content_right'>
+          <view data-id="{{Coupon.id}}" class='draw' bindtap="getCoupon">领取</view>
+          <view class='people_draw'>{{Coupon.numberGitNumber}}人已领取</view>
+        </view>
+      </view>
+    </view>
+    <!-- 爆款 -->
+    <view class='hotgoods'>
+      <view class='hotgoods_top'>
+        <view class='img'>
+          <image src='../../static/image/hotgoods.png'></image>
+        </view>
+        <!-- 导航地址     -->
+        <view class='more'>
+          <navigator>
+            <text style='padding-right:10rpx;'>全部</text>
+            <image src='../../static/image/mright.png'></image>
+          </navigator>
+        </view>
+      </view>
+      <view class='hotgoods_top_content'>
+        <view class='img'>
+          <image src='../../static/image/06.jpg'></image>
+        </view>
+        <view class='text1'>400龙豪(礼盒装)</view>
+        <view class='text2'>¥ 500</view>
+      </view>
+    </view>
+    <!-- 精品推荐 -->
+    <view class='recommend'>
+      <view class='recommend_top'>
+        <view class='img'>
+          <image src='../../static/image/recommend.png'></image>
+        </view>
+      <!-- 导航地址     -->
+      </view>
+      <view class='recommend_content'>
+        <van-row>
+          <van-col span="12">
+            <image src='../../static/image/06.jpg'></image>
+            <view class='text1'>龙豪(单筒装)</view>
+            <view class='text2'>¥300</view>
+          </van-col>
+          <van-col span="12">span: 8</van-col>
+        </van-row>
+      </view>
+    </view>
+    <!-- 公司介绍 -->
+    <view style='padding:40rpx 0;text-align:center;color:#999;font-size:24rpx;'>——————  <text style='padding:0 30rpx;'>微丰达</text>——————</view>
+  </view>
+  <i-toast id="toast" />
+  <!-- <contact-button style="opacity:0;position:absolute;" type="default-dark" session-from="weapp" size="27">123</contact-button>
+  <button open-type="share">分享</button> -->
+</view>

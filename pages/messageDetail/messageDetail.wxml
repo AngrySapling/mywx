@@ -1,0 +1,7 @@
+<import src="../../wxParse/wxParse.wxml" />
+<view id="messageDetail">
+  <view class="content">
+    <template is="wxParse" data="{{wxParseData:data.nodes}}" />
+  </view>
+  <view class="date">{{date}}</view>
+</view>

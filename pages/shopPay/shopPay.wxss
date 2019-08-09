@@ -1,0 +1,92 @@
+/* pages/shopPay/shopPay.wxss */
+.topnav{
+  text-align: center;
+}
+#shoppay{
+  height:100vh;
+  background: #f3f3f3;
+}
+.money{
+  width: 629rpx;
+  padding: 37rpx 30rpx;
+  background: #fff;
+  margin: 27rpx auto 0;
+  border-radius:30rpx; 
+}
+.money_pay{
+  height: 54rpx;
+  line-height:54rpx;
+  font-size: 27rpx;
+  margin-bottom: 15rpx;
+}
+.inp{
+  overflow: hidden;
+  height: 66rpx;
+  line-height: 66rpx;
+}
+.inp .van-cell{
+  float: left;
+  padding: 0;
+}
+.inp .van-cell .van-field__input{
+  height: 66rpx;
+  line-height: 66rpx;
+  background: #fff;
+  font-size: 54rpx;
+}
+.content{
+  width: 629rpx;
+  background: #fff;
+  margin: 27rpx auto 0;
+  border-radius:30rpx; 
+  padding: 0 37rpx;
+}
+.words{
+  padding: 30rpx 0;
+  height: 28rpx;
+  line-height: 28rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+.words text{
+  float: left;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+.words input{
+  float: right;
+  text-align: right;
+  height: 40rpx;
+  line-height: 40rpx;
+  min-height: 40rpx;
+  width: 500rpx;
+}
+.pay_status{
+  font-size: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.status1{
+  float: left;
+}
+.status2{
+  float: right;
+}
+.status2 image{
+  height: 30rpx;
+  width: 30rpx;
+  vertical-align: middle;
+}
+.pays{
+  height: 88rpx;
+  line-height: 88rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #fff;
+  background: #00ca01;
+  width: 690rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border-radius: 44rpx;
+}

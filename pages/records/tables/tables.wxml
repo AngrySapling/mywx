@@ -1,0 +1,33 @@
+ <view class='top'>
+    <view>昨天</view>
+    <view>今天</view>
+    <view>昨天</view>
+  </view>
+  
+<view class='tables'>
+  <view class="containers">
+    <view class="table">
+      <view class="tr">
+        <view class="th">级别</view>
+        <view class="th">累计数量</view>
+        <view class="th">累计重量</view>
+        <view class="th">平均重量</view>
+      </view>
+      <view class="tr" wx:for="{{4}}">
+        <view class='td'> 1 </view>
+        <view class="td"> 2 </view>
+        <view class="td"> 3 </view>
+        <view class="td"> 4 </view>
+      </view>
+    </view> 
+  </view>
+</view>
+<view>
+  <view>
+    <canvas canvas-id="pieCanvas" class="canvas" style="height:300px;width:100%;" bindtouchstart="touchHandler">
+  </canvas>
+  </view>
+  <view>
+    <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+  </view>
+</view>

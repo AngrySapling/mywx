@@ -1,0 +1,26 @@
+/* pages/record/record.wxss */
+.i-row{
+  border-top: 1px solid #ccc;
+}
+.datas_title .col-class{
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+.datas_title:nth-child(2n+1) .col-class{
+  border-right:1px solid #ccc; 
+}
+.datas_title .img{
+  height: 200rpx;
+  width: 200rpx;
+  margin: 0 auto;
+}
+.datas_title .img image{
+  height: 100%;
+  width: 100%;
+}
+.datas_title .text{
+  text-align: center;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}

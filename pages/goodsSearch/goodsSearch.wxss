@@ -1,0 +1,136 @@
+/* pages/goodsSearch/goodsSearch.wxss */
+#goodsSearch .search{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+}
+#goodsSearch .goods{
+  padding: 0 5rpx;
+  background: #fff;
+}
+.goods_content{
+  width:100%;
+}
+#goodsSearch .recommend .history{
+  background: #fff;
+}
+#goodsSearch .recommend .history .text{
+  font-size: 25rpx;
+  float: left;
+}
+#goodsSearch .recommend .history image{
+  float: right;
+  height: 25rpx;
+
+  width: 25rpx;
+  vertical-align: top;
+}
+#goodsSearch .recommend .history .content{
+  padding: 8rpx 20rpx 20rpx;
+  overflow: hidden;
+}
+#goodsSearch .recommend .history .content .content_text{
+  height: 55rpx;
+  line-height: 55rpx;
+  padding:0 30rpx;
+  margin-right: 30rpx;
+  float: left;
+  background: #f3f3f3;
+  color: #5c5c5c;
+  border-radius: 27rpx;
+  font-size: 24rpx;
+}
+
+/* 商品推荐 */
+.rec_goods {
+  margin-top: 20rpx;
+  background:#fff;
+}
+.rec_goods .rec_goods_top{
+  padding: 26rpx 0;
+  height: 27rpx;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.rec_goods .rec_goods_top .img{
+  margin: 0 auto;
+  width: 246rpx;
+  height: 100%;
+}
+.rec_goods .rec_goods_top image{
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+.all_content{
+  padding: 0 5rpx;
+}
+.all_content .van-col{
+  padding: 0 5rpx;
+}
+/* 所有商品 */
+.goods_content .img{
+  width: 100%;
+  height: 294rpx;
+}
+.goods_content .img image{
+  height: 100%;
+  width: 100%;
+}
+.goods_title{
+  height: 168rpx;
+  position: relative;
+}
+.goods_title .title,.goods_title .price{
+  padding: 10rpx 20rpx; 
+  font-size: 28rpx;
+  height: 28rpx;
+  line-height: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.goods_title .img{
+  height: 35rpx;
+  width: 35rpx;
+  position: absolute;
+  top: 56rpx;
+  right: 6rpx;
+}
+.van-col{
+  padding:0 5rpx;
+}
+.goods .nav{
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  background: #fff;
+}
+.goods .nav .van-col{
+  padding: 24rpx 0;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  text-align: center;
+}
+.goods .nav .van-col image{
+  height: 24rpx;
+  width: 24rpx;
+  vertical-align: top;
+}
+.isactive{
+  position: fixed;
+  top: 89rpx;
+  left: 0;
+  z-index: 1000
+}
+.iscolor{
+  color: #ff7500;
+}
+/* 搜索商品 */
+.loading{
+  padding: 10rpx 20rpx;
+  text-align: center;
+  font-size: 24rpx;
+}

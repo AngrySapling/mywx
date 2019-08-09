@@ -1,0 +1,118 @@
+
+<view id="shopingcarts">
+  <view class='allgoods'>
+    <view class="goods">
+      <image src='../../static/image/01.jpg'></image>
+      <view class='goodstitle'>
+        经合理对方是打发打发士大夫第三方的说法是否多福多寿方式的发打发第三方
+      </view>
+      <view class="price">
+        <view>¥2112</view>
+        <view>*10</view>
+      </view>
+    </view>
+    <view class='more'>
+      <view class='content'>
+        <text>显示全部(4)</text>
+        <image src="../../static/image/up.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="words">
+    <textarea maxlength="120" placeholder="给商家留言,如配送要求"></textarea>
+  </view>
+  <view class='express'>
+    <van-tabs active="{{ active }}">
+      <van-tab title="店铺配送">
+        <view class='express_content'>
+            <!-- 地址 -->
+            <view class='adr'>
+              <view class='phone'>
+                <image class="img1" src="../../static/image/map.png"></image>
+                <view class='person_msg'>
+                  <text>李伟</text>
+                  <text style="padding-left:40rpx;">13111334466</text>
+                </view>
+                <image class="img2" src="../../static/image/right.png"></image>
+              </view>
+              <view class="adr_msg">
+              士大夫是的发送到发送到发士大夫是的发送到发送到发
+              </view>
+            </view>
+            <!-- 支付方式 -->
+            <view class='pay_style'>
+              <view class="title">支付方式</view>
+              <image src='../../static/image/right.png'></image>
+              <view class="pay_content" bindtap='handleOpen1'>微信支付</view>
+            </view>
+            <!-- 邮费 -->
+            <view class='price_postage'>
+              <view class='price_msg'>
+                <view class='title1'>商品总额</view>
+                <view class='money'>1000</view>
+              </view>
+              <view class='price_msg' style='border-bottom:1px solid #ccc;'>
+                <view class='title1'>运费</view>
+                <view class='money'>200</view>
+              </view>
+              <view class='price_msg' style='padding-top:20rpx;'>
+                <view class='title1'>应付金额</view>
+                <view class='money' style='color:#fd6e00;'>3232323232</view>
+              </view>
+            </view>
+          </view>
+      </van-tab>
+      <van-tab title="到店自取">
+        <view class='express_content' >
+          <!-- 地址 -->
+          <view class='tel'>
+            <van-cell-group>
+              <van-field
+                value="{{ username }}"
+                required
+                clearable
+                label="联系人"
+                placeholder="请输入联系人"
+              />
+
+              <van-field
+                value="{{ numver }}"
+                type="number"
+                label="手机号"
+                placeholder="请输入手机号"
+                required
+                border="{{ false }}"
+              />
+            </van-cell-group>
+          </view>
+          <!-- 支付方式 -->
+          <view class='pay_style'>
+            <view class="title">支付方式</view>
+            <image src='../../static/image/right.png'></image>
+            <view class="pay_content" bindtap='handleOpen1'>微信支付</view>
+          </view>
+          <!-- 邮费 -->
+          <view class='price_postage'>
+            <view class='price_msg' style='border-bottom:1px solid #ccc;'>
+              <view class='title1'>商品总额</view>
+              <view class='money'>1000</view>
+            </view>
+            <view class='price_msg' style='padding-top:20rpx;'>
+              <view class='title1'>应付金额</view>
+              <view class='money' style='color:#fd6e00;'>3232323232</view>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
+    
+    
+  </view>
+  <view class='gopay' bindtap='surePay'>
+      确认支付
+  </view>
+  <van-action-sheet show="{{ show }}" actions="{{ actions }}" title="支付方式" bind:close="onClose" bind:select="onSelect">
+    <!-- <view wx:for="{{actions}}" wx:key="{{index}}">{{item.name}}</view> -->
+  </van-action-sheet>
+  <van-dialog id="van-dialog" />
+</view>

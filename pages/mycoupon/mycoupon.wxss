@@ -1,0 +1,102 @@
+/* pages/coupon/coupon.wxss */
+.coupon_nav{
+  padding-top: 15rpx;
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.coupon_nav .nav_li{
+  text-align: center;
+  font-size: 24rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+}
+/* pages/mycoupon/mycoupon.wxss */
+#mycoupon .coupon{
+  padding-top: 32rpx;
+}
+#mycoupon .coupon_content{
+  width: 672rpx;
+  height: 184rpx;
+  margin: 0 auto;
+  margin-bottom: 32rpx;
+  position: relative;
+}
+#mycoupon .coupon_content image{
+  height: 100%;
+  width: 100%;
+}
+#mycoupon .coupon_content .content{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0 ;
+  top: 0;
+}
+#mycoupon .coupon_content .content .left{
+  height: 132rpx;
+  width: 403rpx;
+  padding: 26rpx;
+  color: #fff;
+  float: left;
+}
+#mycoupon .coupon_content .content .left .title1{
+  height: 33rpx;
+  line-height: 33rpx;
+  font-size: 33rpx;
+}
+#mycoupon .coupon_content .content .left .title2{
+  height: 64rpx;
+  line-height: 64rpx;
+  font-size: 22rpx;
+  color: #eee;
+}
+#mycoupon .coupon_content .content .right{
+  width: 216rpx;
+  float: right;
+  padding: 16rpx 0;
+  color: #fff;
+  text-align: center;
+}
+#mycoupon .coupon_content .content .right .title1{
+  font-size: 31rpx;
+
+}
+#mycoupon .coupon_content .content .right .title2{
+  height: 33rpx;
+  line-height: 33rpx;
+  font-size: 22rpx;
+}
+#mycoupon .coupon_content .content .right .title3{
+  width: 151rpx;
+  height: 51rpx;
+  line-height: 51rpx;
+  font-size: 20rpx;
+  margin: 0 auto;
+  background: #fff;
+  color: #478dfd;
+  border-radius: 25rpx;
+  margin-top: 12rpx;
+}
+#mycoupon .coupon_content .content .right .title4{
+  color: #5193ff;
+  background: #216aeb !important;
+}
+.mycoupon{
+  position: fixed;
+  bottom: 100rpx;
+  right: 50rpx;
+  height: 80rpx;
+  width: 80rpx;
+  background: #ff7348;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.mycoupon image{
+  height: 100%;
+  width:100%;
+}
+.isColor{
+  color:#ff7348;
+}

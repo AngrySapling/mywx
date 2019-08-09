@@ -1,0 +1,113 @@
+/* pages/invoice/invoice.wxss */
+.invoice{
+  overflow: hidden;
+}
+.invoice .top{
+  height: 30px;
+  width: 100%;
+  border-top: 1px solid #eee;
+  position: fixed;
+  display:flex;
+  line-height: 30px;
+}
+.invoice .top .topInv{
+  font-size: 16px;
+  flex:1;
+  text-align:center;
+  border-bottom: 1px solid #ccc;
+}
+.invoice .top .topInv:first-child{
+  border-right: 1px solid #1AAD16;
+}
+.isactive{
+  background: #1AAD16;
+  border-bottom: 1px solid #1AAD16 !important;
+  color: #fff;
+}
+.getcontent{
+  margin-top: 32px;
+  background: #eee;
+  height: calc(100vh - 32px);
+}
+.getcontent .search{
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 5px;
+  overflow: hidden;
+}
+.getcontent .search input{
+  width: 70%;
+  float: left;
+  border:1px solid #ccc;
+  padding-left:10px;
+  font-size: 14px;
+  height: 26px;
+
+}
+.getcontent .search .btn{
+  float:right;
+  height: 28px;
+  line-height: 28px;
+  font-size: 14px;
+  padding: 0 10px;
+  background: #1AAD16;
+  border-radius: 5px;
+  color: #fff;
+}
+.invocieContent {
+  width: 85%;
+  border:1px solid #ccc;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding:10px;
+  border-radius: 5px;
+}
+.invocieContent .title{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight:bold;
+  text-align: center;
+  border-bottom: 2px dashed #ccc;
+}
+.invocieContent i-row{
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+.invocieContent .col-class{
+  border-bottom: 1px dashed #ccc;
+}
+.invocieContent .col-class1{
+  text-align: right;
+}
+.invocieContent .col-class2{
+  text-align: center;
+}
+.getcontent .submit{
+  width: 70%;
+  margin: 0 auto;
+  height: 30px;
+  line-height: 30px;
+  margin-top: 40px;
+  background:  #1AAD16;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.photo{
+  height: 50px;
+  width:50px;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  border-radius: 50%;
+  border:1px solid #ccc;
+  overflow:hidden;
+}
+.photo image{
+  height: 90%;
+  width: 90%;
+  padding:2px;
+}

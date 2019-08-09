@@ -1,0 +1,4 @@
+/* pages/sales/sales.wxss */
+.sales_content,.sales_scroll{
+  height: calc(100vh - 52px);
+}

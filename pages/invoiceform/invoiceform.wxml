@@ -1,0 +1,68 @@
+<!--pages/invoiceform/invoiceform.wxml-->
+<view class='invoiceform'>
+  <view class="top">申请开票</view>
+  <view class="nav">
+    <i-row>
+      <i-col span="8" i-class="col-class" wx:for="{{invoiceNav}}" wx:key="id">
+        <view 
+          class="title {{item.id === navID?'navactive':''}}"
+          id='{{item.id}}'
+          bindtap="navtap"
+        >{{item.name}}</view>
+      </i-col>
+    </i-row>
+  </view>
+  <view class="institution" wx:if="{{navID === 1}}">
+    <i-row class="msg">
+      <i-col span="8" i-class="col-class col-class1" >
+        <text style="font-size:16px;height:25px;line-height:25px;">单位名称</text>
+      </i-col>
+      <i-col span="16" i-class="col-class col-class2">
+        <input value='123'></input>
+      </i-col>
+    </i-row>
+  </view>
+  <view class="company" wx:if="{{navID === 2}}">
+    <view class='allmsg'>
+      <i-row class="msg">
+        <i-col span="8" i-class="col-class col-class1">企业名称</i-col>
+        <i-col span="16" i-class="col-class col-class2">
+          <input value='123'></input>
+        </i-col>
+      </i-row>
+    </view>
+    <view class='allmsg'>
+      <i-row class="msg">
+        <i-col span="8" i-class="col-class col-class1">税务登记号</i-col>
+        <i-col span="16" i-class="col-class col-class2">
+          <input value='123'></input>
+        </i-col>
+      </i-row>
+    </view>
+    <view class='allmsg'>
+      <i-row class="msg">
+        <i-col span="8" i-class="col-class col-class1">邮箱</i-col>
+        <i-col span="16" i-class="col-class col-class2">
+          <input value='123'></input>
+        </i-col>
+      </i-row>
+    </view>
+    <view class='allmsg'>
+      <i-row class="msg">
+        <i-col span="8" i-class="col-class col-class1">手机号</i-col>
+        <i-col span="16" i-class="col-class col-class2">
+          <input value='123'></input>
+        </i-col>
+      </i-row>
+    </view>
+  </view>
+  <view class="check">
+    <p>开票内容</p>
+    <radio-group class="radio-group" bindchange="radioChange">
+      <label class="radio" wx:for="{{items}}">
+        <radio value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+      </label>
+    </radio-group>
+  </view>
+  <view class="getinvoice">获取发票</view>
+</view>

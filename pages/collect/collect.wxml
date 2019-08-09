@@ -1,0 +1,22 @@
+<view id="collect">
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词"  use-action-slot bind:search="onSearch" style='position:fixed;width:100%;border-bottom:1px solid #eee;z-index:10;'>
+      <view slot="action" bind:tap="onSearch">搜索</view>
+    </van-search>
+  <scroll-view scroll-y class='collect_shoplist'>
+  <view style='height:45px;'></view>
+    <view class='goods'>
+      <image src='../../static/image/01.jpg'></image>
+      <view class='title'>
+        <view class='text'>茉莉龙豪(新春)</view>
+        <view class='price'><text style='font-size:18rpx;'>¥</text> <text style='font-size:24rpx;'>500</text></view>
+        <view class='goshop'>
+          <text style='padding-right:20rpx;'>23人购买</text><text>1800浏览</text>
+        </view>
+      </view>
+      <view class='addshop' bindtap='addShop'>立即购买</view>
+    </view>
+  </scroll-view>
+  <van-action-sheet show="{{ show }}" title="支持以下配送方式" bind:close="close">
+    <view>一些内容</view>
+  </van-action-sheet>
+</view>

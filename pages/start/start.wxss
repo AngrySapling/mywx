@@ -1,0 +1,123 @@
+/* pages/start/start.wxss */
+.start{
+  height:100vh;
+  overflow: hidden;
+}
+.img{
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left:50%;
+  opacity: 0;
+  margin-left: -50px;
+}
+.img image{
+  height: 100%;
+  width: 100%;
+}
+.content{
+  height: 75%;
+  position: absolute;
+  top:25%;
+  width: 100%;
+
+}
+.login{
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  position:absolute;
+  width: 100%;
+  z-index: 1000;
+  /* display: none; */
+}
+.login .palyLogin{
+  height: 249px;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+}
+.login .palyLogin image{
+  height: 40px;
+  width: 40px;
+  border: 1px solid red;
+  border-radius: 50%;
+  visibility: top;
+  float: left;
+}
+.login .palyLogin .lets{
+  padding: 20px 30px;
+  height: 40px;
+  line-height: 40px;
+}
+.login .palyLogin .lets view{
+  height: 40px;
+  line-height: 40px;
+  float: left;
+  padding-left: 20px;
+}
+.login .palyLogin .gomsg{
+  padding-left: 15px;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+.login .palyLogin .ymsg{
+  padding-left:15px;
+  font-size: 12px;
+  height: 30px;
+  line-height: 30px; 
+  color: #999;
+}
+.login .palyLogin button{
+  width: 90%;
+  margin: 0 auto;
+  height: 40px;
+  background: #00bd0b;
+  line-height:40px;
+  margin-top: 50px;
+  color: #fff;
+}
+.bg1{
+  width: 100%;
+  height: 200px;
+}
+.content .bg1{
+  width: 100%;
+  height: 100px;
+}
+.content .bg1 image{
+  width: 100%;
+  height: 100px;
+}
+.goshop{
+  height:calc(100% - 170px);
+  background: #fff !important;
+  padding-top: 70px;
+  position: relative;
+}
+.goshop image{
+  width: 300px;
+  height: 120px;
+  margin: 0 auto;
+  display: block;
+}
+.go{
+  height: 40px;
+  width: 130px;
+  text-align: center;
+  line-height: 40px;
+  background: #08b1b6;
+  color: #fff;
+  font-size: 18px;
+  border-radius:20px; 
+  margin: 0 auto;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  margin-left: -65px;
+}

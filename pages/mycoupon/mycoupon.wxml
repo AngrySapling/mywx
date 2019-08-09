@@ -1,0 +1,30 @@
+<!--pages/coupon/coupon.wxml-->
+<view id='mycoupon'>
+  <view class='coupon_nav'>
+    <van-row>
+      <van-col span="8" wx:for="{{nav}}" wx:key="{{index}}"><view class='nav_li' id='{{item.id}}' class="nav_li {{item.id === navID?'isColor':''}}" bindtap='playNav'>{{item.name}}</view></van-col>
+    </van-row>
+  </view>
+  <scroll-view
+    scroll-y  style="height: 100vh;" bindscrolltoupper="upper"  bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view style='height:100rpx;'></view>
+    <view class='coupon'>
+      <view class='coupon_content'>
+        <image src='../../static/image/mycoupon.png'></image>
+        <view class='content'>
+          <view class='left'>
+            <view class='title1'>Q粉家族</view>
+            <view class='title2'>长期有效</view>
+          </view>
+          <view class='right'>
+            <view class='title1'>¥500</view>
+            <view class='title2'>代金券</view>
+            <view class='title3'>立即使用</view>
+             <!-- <view class='title3 title4'>已领取</view> -->
+          </view>
+        </view>
+      </view>
+      
+    </view>
+  </scroll-view>
+</view>

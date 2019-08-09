@@ -1,0 +1,44 @@
+<view id='classify'>
+  <view class='search'>
+    <navigator url="../goodsSearch/goodsSearch">
+      <view class='content'>
+        <image src='../../static/image/search.png'></image>
+        搜索所有商品
+      </view>
+    </navigator>
+  </view>
+  <view class="shop">
+    <van-row class="shops">
+    <!-- nav导航类 -->
+      <van-col span="6" i-class="col-class" class="shops_col">
+        <scroll-view scroll-y scroll-into-view="red" scroll-top="{{scrolltop_h}}"  class="tab" >
+          <view id="green" data-id='{{item.id}}' 
+                class="scroll-view-item bc_green {{tabID == item.id?'active':''}}" 
+                wx:for="{{navList}}"                         
+                bindtap="navclick" wx:key="{{name}}" >
+            {{item.name}}
+          </view>
+        </scroll-view>
+      </van-col>
+    <!-- list商品列表 -->
+      <van-col span="18" i-class="col-class content">
+      <!-- 商品列表 -->
+        <scroll-view scroll-y bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}" class="shopcontent">
+          <view wx:for="{{shop_list}}" wx:key="id">
+            <my-shop item="{{item}}"  bindaddshop="addshop"></my-shop>
+          </view>
+          <view class='bottom' wx:if="{{isLoading}}"><van-loading type="spinner" size="28rpx" />加载中...</view>
+          <view class='nogoods' wx:if="{{isShow}}">
+            <image src='../../static/image/nogoods.png'></image>
+            <view class='none'>暂无商品</view>
+          </view>
+        </scroll-view>
+      </van-col>
+    </van-row>
+  </view>
+  <van-action-sheet show="{{ show }}" bind:close="onClose" class="action">
+    <view style="height:100%;">
+      <my-spec basicInfo="{{basicInfo}}" properties="{{properties}}" specGoods="{{specGoods}}"  bindclose="onClose"></my-spec>
+    </view>
+  </van-action-sheet>
+</view>
