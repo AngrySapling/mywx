@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/classify/classify",
     "pages/indexs/indexs",
     "pages/start/start",
-    "pages/classify/classify",
     "pages/detail/detail",
     "pages/bluetooth/bluebooth",
     "pages/my/my",
@@ -30,7 +30,8 @@
     "pages/payphone/payphone",
     "pages/records/tables/tables",
     "pages/componentSpec/spec",
-    "pages/myadvance/myadvance"
+    "pages/myadvance/myadvance",
+    "pages/component/reservebuy/reservebuy"
   ],
   "window": {
     "backgroundColor": "#f1f1f1",

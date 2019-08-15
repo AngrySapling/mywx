@@ -28,7 +28,7 @@
           <block wx:for="{{message}}" wx:key="title">
             <swiper-item>
               <view id='{{item.id}}' style='overflow:hidden;height:100%;' bindtap='nav'>
-                <text class='content' style='line-height:25px;'>{{item.title}}</text> <text style='float:right;height:100%;display:block;line-height:25px;'>{{item.dateAdd}}</text>
+                <text class='content' style='line-height:25px;'>{{item.title}}</text>
               </view>
             </swiper-item>
           </block>
@@ -107,12 +107,13 @@
       </view>
       <view class='recommend_content'>
         <van-row>
-          <van-col span="12">
-            <image src='../../static/image/06.jpg'></image>
-            <view class='text1'>龙豪(单筒装)</view>
-            <view class='text2'>¥300</view>
+          <van-col span="12" wx:for="{{Recommend}}" wx:key="id" >
+            <view class="goods">
+              <image src="{{item.pic}}"></image>
+              <view class='text1'>{{item.name}}</view>
+              <view class='text2'>¥{{item.minPrice}}</view>
+            </view>
           </van-col>
-          <van-col span="12">span: 8</van-col>
         </van-row>
       </view>
     </view>

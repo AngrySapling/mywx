@@ -1,14 +1,15 @@
 const apiUrl = "https://api.it120.cc/mzsx";
 const api = require('./request.js');
-//轮播
-const recommend = `${apiUrl}/shop/goods/list`
-const couponlist = `${apiUrl}/discounts/coupons`
-const coupon = `${apiUrl}/discounts/fetch`
+//精品推荐
+const goods = `${apiUrl}/shop/goods/list`
+//导航列表
+const navs = `${apiUrl}/shop/goods/category/all`
+
 
 const indexs = {
   //轮播
-  getRecommend(data, callback) {
-    api({ url: recommend, method: "POST", data:data }).then((res) => {
+  getGoods(data, callback) {
+    api({ url: goods, method: "POST", data:data }).then((res) => {
       let data = res.data;
       callback(data)
     }).catch((err) => {
@@ -16,9 +17,9 @@ const indexs = {
     })
   },
 
-  //优惠券列表
-  getCouponList(data, callback) {
-    api({ url: couponlist,method:"POST", data: data }).then((res) => {
+  //导航列表
+  getNav(data, callback) {
+    api({ url: navs,method:"POST", data: data }).then((res) => {
       let data = res.data;
       callback(data)
     }).catch((err) => {
