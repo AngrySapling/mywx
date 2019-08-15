@@ -121,12 +121,13 @@
 /* 优惠券 */
 .coupon,.hotgoods,.recommend{
   margin-top: 20rpx;
-  padding: 26rpx;
+  padding: 0 26rpx;
   background: #fff;
 }
 .coupon .coupon_top,.hotgoods .hotgoods_top,.recommend .recommend_top{
   height: 27rpx;
   width: 100%;
+  padding: 20rpx 0;
   overflow: hidden;
   position: relative;
 }
@@ -143,7 +144,6 @@
 .coupon .coupon_content,.hotgoods .hotgoods_top_content{
   overflow: hidden;
   padding: 12rpx 0;
-  margin-top: 43rpx;
 }
 .coupon_content_left{
   height: 110rpx;
@@ -207,7 +207,7 @@
 }
 .hotgoods .hotgoods_top .more{
   position: absolute;
-  top: 0;
+  top: 20rpx;
   right:0;
   font-size: 20rpx;
   height: 26rpx;
@@ -239,23 +239,27 @@
   color: #ff7300;
   font-size: 30rpx;
 }
+
 /* 精品推荐 */
 .recommend{
-  padding: 26rpx 10rpx !important;
+  padding: 0 10rpx !important;
 }
-.recommend .van-row {
-  padding-top: 25rpx;
+.recommend .col-goods:nth-child(2n+1) .goods {
+  padding-right: 5rpx;
+}
+.recommend .col-goods:nth-child(2n) .goods {
+  padding-left: 5rpx;
 }
 .recommend .van-row .van-col{
-  padding-bottom:55rpx; 
+  padding-bottom:26rpx; 
 }
 .recommend .van-row .van-col image{
   height: 345rpx;
   width: 100%;
 }
 .recommend .van-row .van-col .text1{
-  line-height: 94rpx;
-  height: 94rpx;
+  line-height: 40rpx;
+  height: 40rpx;
   font-size: 22rpx;
   padding-left: 11rpx;
   overflow: hidden;
@@ -266,4 +270,11 @@
   padding-left: 14rpx;
   font-size: 24rpx;
   color: #f96000;
+}
+.recommend .van-row .van-col .text2 span{
+  margin-right: 10px;
+}
+.isprice{
+  text-decoration: line-through;
+  color: #ccc;
 }

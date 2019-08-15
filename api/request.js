@@ -77,7 +77,7 @@ function regester(code,referrer){
         })
       }else{
         login();
-        resolve(res)
+        res(res)
       }
     }).catch((err)=>{
       rej(err);
