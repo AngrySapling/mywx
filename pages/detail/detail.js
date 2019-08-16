@@ -31,6 +31,11 @@ Page({
     show:false,
     show1:false,
     length:0,
+    //预约
+    reserve:{
+      title:'预约时间',
+      time:'请选择'
+    },
 // 时间
     minHour: 10,
     maxHour: 20,

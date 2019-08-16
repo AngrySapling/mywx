@@ -93,7 +93,14 @@ Page({
     shopList: function(id) {
         console.log(8885522)
         let _this = this;
-        goods.getGoods({ categoryId: id, page: this.data.page, pageSize: this.data.pageSize }, (msg) => {
+      let params = { 
+        categoryId: id, 
+        page: this.data.page, 
+        pageSize: this.data.pageSize,
+        kanjia:false,
+        miaosha:false, 
+      }
+      goods.getGoods(params, (msg) => {
             wx.hideLoading()
             if (!msg || msg.length < _this.data.pageSize) {
                 _this.setData({

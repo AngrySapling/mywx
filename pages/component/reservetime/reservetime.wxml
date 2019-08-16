@@ -1,8 +1,8 @@
 <view class='order'>
     <view style='background:#fff;' class='choice'>
-      <view class='data_text'>预约时间</view>
+      <view class='data_text'>{{reserve.title}}</view>
       <view class='all' bindtap='handleChange1'>
-        <text>请选择</text>
+        <text>{{reserve.time}}</text>
         <image src='../../../static/image/right1.png'></image>
       </view>
     </view>

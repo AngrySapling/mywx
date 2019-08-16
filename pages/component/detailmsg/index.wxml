@@ -1,0 +1,18 @@
+<!--pages/component/detailmsg/index.wxml-->
+<view class='prices'>
+  <view style='font-size:16px;' class='price_b1'>
+    <text style='color:red;'> ¥{{basicInfo.minPrice}}元 </text>
+  </view>
+  <!-- <view class='price_b1'>
+    原价: <text style="text-decoration:line-through;color:#999;">{{basicInfo.originalPrice}}元 </text>
+  </view> -->
+  <view class='price_b1 check'>
+    <view style='text-align:left;'>已有 <text></text>人预约 </view>
+    <view style='text-align:right;'>浏览 <text></text>次 </view>
+  </view>
+  <view class='price_b1 check'>
+    <view style='text-align:left;'>运费 <text></text>元 </view>
+    <view style='text-align:center;'>已售 <text></text>件 </view>
+    <view style='text-align:right;'>浏览 <text></text>次 </view>
+  </view>
+</view>

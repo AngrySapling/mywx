@@ -107,13 +107,6 @@
       </view>
       <view class='recommend_content'>
         <van-row>
-<<<<<<< HEAD
-          <van-col span="12" wx:for="{{Recommend}}" wx:key="id" >
-            <view class="goods">
-              <image src="{{item.pic}}"></image>
-              <view class='text1'>{{item.name}}</view>
-              <view class='text2'>¥{{item.minPrice}}</view>
-=======
           <van-col span="12" wx:for="{{Recommend}}" wx:key="id" class="col-goods">
             <view class="goods">
               <image src="{{item.pic}}"></image>
@@ -122,7 +115,6 @@
                 <span class="sp1">{{item.minPrice}}元</span>
                 <span class="sp2 isprice">{{item.originalPrice}}元</span>
               </view>
->>>>>>> 84b6f8592aa9b86b8254a52314ce6142c064ab93
             </view>
           </van-col>
         </van-row>

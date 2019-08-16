@@ -251,16 +251,11 @@
 .recommend .col-goods:nth-child(2n) .goods {
   padding-left: 5rpx;
 }
-<<<<<<< HEAD
 .recommend .van-row .van-col:nth-child(2n+1) .goods{
-  padding-right:10rpx;
+  padding-right:5rpx;
 }
 .recommend .van-row .van-col:nth-child(2n) .goods{
-  padding-left:10rpx;
-=======
-.recommend .van-row .van-col{
-  padding-bottom:26rpx; 
->>>>>>> 84b6f8592aa9b86b8254a52314ce6142c064ab93
+  padding-left:5rpx;
 }
 .recommend .van-row .van-col image{
   height: 345rpx;

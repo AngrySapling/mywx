@@ -1,1 +1,23 @@
 /* pages/component/reserve/reservetime.wxss */
+.order{
+  background: #eee;
+  padding: 10rpx 0;
+}
+.order .choice{
+  height: 34rpx;
+  line-height: 34rpx;
+  font-size:30rpx; 
+  padding: 20rpx;
+}
+.order .choice .data_text{
+  float: left;
+}
+.order .choice .all{
+  color: #666;
+  float: right;
+}
+.order .choice .all image{
+  height: 34rpx;
+  width: 34rpx;
+  vertical-align: top;
+}

@@ -8,6 +8,7 @@
     "van-stepper": "../../dist/stepper/index",
     "van-datetime-picker": "../../dist/datetime-picker/index",
     "van-tabbar": "../../dist/tabbar/index",
-    "van-tabbar-item": "../../dist/tabbar-item/index"
+    "van-tabbar-item": "../../dist/tabbar-item/index",
+    "van-reservetime":"../component/reservetime/reservetime"
   }
 }

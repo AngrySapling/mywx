@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/detail/detail",
     "pages/classify/classify",
     "pages/indexs/indexs",
     "pages/start/start",
-    "pages/detail/detail",
     "pages/bluetooth/bluebooth",
     "pages/my/my",
     "pages/shopPay/shopPay",

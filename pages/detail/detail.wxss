@@ -13,28 +13,6 @@
   border-bottom: 1px solid #ccc;
   padding: 10rpx 30rpx;
 }
-.order{
-  background: #eee;
-  padding: 19rpx 0;
-}
-.order .choice{
-  height: 34rpx;
-  line-height: 34rpx;
-  font-size:30rpx; 
-  padding: 30rpx;
-}
-.order .choice .data_text{
-  float: left;
-}
-.order .choice .all{
-  color: #666;
-  float: right;
-}
-.order .choice .all image{
-  height: 34rpx;
-  width: 34rpx;
-  vertical-align: top;
-}
 .detail_title_top{
   padding:10rpx 0 8px;
 }
